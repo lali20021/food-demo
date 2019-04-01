@@ -21,7 +21,7 @@ gem 'puma', '~> 3.11'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'sqlite3'
+gem 'pg'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -39,6 +39,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+group :production do
+end
+
 
 
 
